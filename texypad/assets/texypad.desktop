@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Texypad
+Comment=Lightweight LaTeX editor with live PDF print view
+Exec=texypad %F
+Icon=texypad
+Terminal=false
+Categories=Office;TextEditor;Development;
+MimeType=text/x-tex;text/x-bibtex;
+StartupNotify=true
