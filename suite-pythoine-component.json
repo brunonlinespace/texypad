@@ -1,0 +1,25 @@
+{
+  "id": "texypad",
+  "name": "Texypad",
+  "description": "A focused LaTeX and BibTeX editor.",
+  "component_kind": "editor",
+  "extensions": [
+    ".tex",
+    ".bib"
+  ],
+  "portable_command": [
+    "main.py"
+  ],
+  "icon": "texypad/assets/icons/texypad.png",
+  "version": "0.0.4",
+  "publisher": "brunonlinespace",
+  "repository": "https://github.com/brunonlinespace/texypad",
+  "desktop_id": "io.github.brunonlinespace.texypad",
+  "tagline": "Friendly. Fast. Focused.",
+  "publisher_id": "brunonlinespace",
+  "capabilities": {
+    "routing": true,
+    "open": true,
+    "create": true
+  }
+}

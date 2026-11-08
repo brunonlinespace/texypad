@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.brunonlinespace.texypad</id>
+  <name>Texypad</name>
+  <summary>Lightweight LaTeX editor with a live PDF print view</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="io.github.brunonlinespace"><name>Bruno Machado</name></developer>
+  <launchable type="desktop-id">io.github.brunonlinespace.texypad.desktop</launchable>
+  <description>
+    <p>Texypad is a lightweight Pad-family LaTeX editor combining syntax-aware source editing, asynchronous TeX compilation, and an embedded Qt PDF print view for focused document work.</p>
+  </description>
+  <url type="homepage">https://github.com/brunonlinespace/texypad</url>
+  <url type="bugtracker">https://github.com/brunonlinespace/texypad/issues</url>
+  <content_rating type="oars-1.1"/>
+  <provides>
+    <binary>texypad</binary>
+    <mediatype>text/x-tex</mediatype>
+    <mediatype>text/x-bibtex</mediatype>
+  </provides>
+  <releases>
+    <release version="0.0.4" date="2026-11-08"/>
+  </releases>
+</component>

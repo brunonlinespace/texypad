@@ -1,0 +1,2 @@
+# Build-only dependency; resolved versions are captured in the build Python lock.
+PyInstaller>=6.21,<7

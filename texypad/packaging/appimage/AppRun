@@ -1,0 +1,4 @@
+#!/bin/sh
+HERE="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+export PYTHONNOUSERSITE=1
+exec "$HERE/usr/bin/texypad" "$@"

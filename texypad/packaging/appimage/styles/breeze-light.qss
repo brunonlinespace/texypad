@@ -1,0 +1,273 @@
+/*
+ * Ricopad AppImage-only Breeze-inspired light theme.
+ * This is a lightweight Qt stylesheet, not KDE's native Breeze engine.
+ */
+
+QWidget {
+    background-color: #eff0f1;
+    color: #232629;
+    selection-background-color: #3daee9;
+    selection-color: #ffffff;
+}
+
+
+/* Ribbon chrome is explicit so a dark/light host palette cannot leak into AppImage controls. */
+QTabWidget#texypadRibbon,
+QTabWidget#texypadRibbon::pane,
+QScrollArea#ribbonFilePage,
+QScrollArea#ribbonHomePage,
+QScrollArea#ribbonViewPage,
+QScrollArea#ribbonHelpPage {
+    background-color: #eff0f1;
+}
+
+QTabWidget#texypadRibbon::pane {
+    border: 0;
+    top: -1px;
+}
+
+QTabWidget#texypadRibbon QTabBar::tab {
+    background-color: #f7f7f8;
+    color: #232629;
+    border: 1px solid #b8bdc2;
+    border-bottom: 0;
+    padding: 5px 12px;
+    margin-right: 2px;
+}
+
+QTabWidget#texypadRibbon QTabBar::tab:selected {
+    background-color: #ffffff;
+    border-color: #9ea5ab;
+}
+
+QTabWidget#texypadRibbon QTabBar::tab:hover:!selected {
+    background-color: #e7eaed;
+}
+
+QFrame#ribbonSection {
+    background-color: #f7f7f8;
+    border: 1px solid #b8bdc2;
+}
+
+QMainWindow,
+QDialog {
+    background-color: #eff0f1;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+QMenuBar {
+    background-color: #eff0f1;
+    color: #232629;
+    spacing: 3px;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+QMenuBar::item:selected {
+    background-color: #dfe3e6;
+}
+
+QMenu {
+    background-color: #fcfcfc;
+    color: #232629;
+    border: 1px solid #b8bdc2;
+    padding: 4px;
+}
+
+QMenu::item {
+    padding: 5px 28px 5px 24px;
+    border-radius: 3px;
+}
+
+QMenu::item:selected {
+    background-color: #3daee9;
+    color: #ffffff;
+}
+
+QMenu::item:disabled {
+    color: #8b9298;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #c4c8cc;
+    margin: 5px 8px;
+}
+
+QPushButton,
+QToolButton {
+    background-color: #f7f7f8;
+    color: #232629;
+    border: 1px solid #b8bdc2;
+    border-radius: 3px;
+    padding: 4px 8px;
+    min-height: 20px;
+}
+
+QPushButton:hover,
+QToolButton:hover {
+    background-color: #e7eaed;
+    border-color: #9ea5ab;
+}
+
+QPushButton:pressed,
+QToolButton:pressed,
+QToolButton:checked {
+    background-color: #3daee9;
+    border-color: #3daee9;
+    color: #ffffff;
+}
+
+QPushButton:disabled,
+QToolButton:disabled {
+    background-color: #e8eaec;
+    color: #9ba1a6;
+    border-color: #d0d3d6;
+}
+
+QToolButton::menu-indicator {
+    image: none;
+}
+
+QLineEdit,
+QPlainTextEdit,
+QTextEdit,
+QSpinBox,
+QDoubleSpinBox,
+QComboBox {
+    background-color: #ffffff;
+    color: #232629;
+    border: 1px solid #b8bdc2;
+    border-radius: 3px;
+    padding: 4px;
+    selection-background-color: #3daee9;
+    selection-color: #ffffff;
+}
+
+QLineEdit:focus,
+QPlainTextEdit:focus,
+QTextEdit:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QComboBox:focus {
+    border: 1px solid #3daee9;
+}
+
+QComboBox::drop-down {
+    border: 0;
+    width: 22px;
+}
+
+QAbstractItemView {
+    background-color: #ffffff;
+    color: #232629;
+    border: 1px solid #b8bdc2;
+    selection-background-color: #3daee9;
+    selection-color: #ffffff;
+    outline: 0;
+}
+
+QStatusBar {
+    background-color: #e4e7e9;
+    color: #232629;
+    border-top: 1px solid #c2c6ca;
+}
+
+QStatusBar::item {
+    border: 0;
+}
+
+QGroupBox {
+    border: 1px solid #b8bdc2;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding-top: 8px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 8px;
+    padding: 0 4px;
+}
+
+QCheckBox,
+QRadioButton {
+    spacing: 6px;
+    background-color: transparent;
+}
+
+QCheckBox::indicator,
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QProgressBar {
+    background-color: #ffffff;
+    border: 1px solid #b8bdc2;
+    border-radius: 3px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #3daee9;
+    border-radius: 2px;
+}
+
+QScrollBar:vertical {
+    background-color: #eff0f1;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #b2b8bd;
+    min-height: 28px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #92999f;
+}
+
+QScrollBar:horizontal {
+    background-color: #eff0f1;
+    height: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #b2b8bd;
+    min-width: 28px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #92999f;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line,
+QScrollBar::add-page,
+QScrollBar::sub-page {
+    background: transparent;
+    border: 0;
+    width: 0;
+    height: 0;
+}
+
+QToolTip {
+    background-color: #ffffdc;
+    color: #232629;
+    border: 1px solid #8f9499;
+    padding: 4px;
+}
